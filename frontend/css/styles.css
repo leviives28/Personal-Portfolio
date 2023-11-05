@@ -1,4 +1,4 @@
-body{
+body {
     max-width: 100vh;
     min-width: 100%;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ nav {
 }
 
 main {
-    margin-top: 25%;
+    margin-top: 30%;
 }
 
 #titles h1, #titles h2 {
@@ -249,7 +249,7 @@ figcaption {
     }
 
     main {
-        margin-top: 20%;
+        margin-top: 25%;
     }
 
     #recentProjectsContainer {
@@ -277,7 +277,7 @@ figcaption {
     }
 
     main {
-        margin-top: 15%;
+        margin-top: 20%;
     }
 
     #recentProjectsContainer {
@@ -340,6 +340,10 @@ figcaption {
 }
 
 @media only screen and (min-width: 1000px) {
+    #main {
+        margin-top: 15%;
+    }
+
     #recentProjectsContainer {
         margin-top: 10%
     }
