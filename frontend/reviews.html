@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Levi Nicholson Ives">
+    <meta name="description" content="Software developer available for freelance hire, and employment. Located in East Sussex, United Kingdom">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#66cccc">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>Levi Ives - Software Developer - Reviews</title>
+</head>
+<body>
+    <header>
+        <div id="logoContainer">
+            <a href="./home.html"><img id="logo" src="./images/logo.png" alt="Image of levi"></a>
+        </div>
+        <nav>
+            <a href="./home.html" class="navLink">Home</a>
+            <a href="./about.html" class="navLink">About</a>
+            <a href="./projects.html" class="navLink">Projects</a>
+            <a href="./contact.html" class="navLink">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div id="reviewsTitle">
+            <h1>Reviews</h1>
+        </div>
+        <div id="currentReview" name="currentReview">
+            <p id="currentReviewMessage"></p>
+            <div id="projectLink"></div>
+        </div>
+        <div id="reviewForm">
+            <h3>Add a review</h3>
+            <form name="review_form" action="https://leviives.dev/reviews/add_review" method="POST" onsubmit="event.preventDefault(); validateForm();">
+                <label for="review_area">Review</label><br>
+                <textarea id="review_area" type="textarea" cols="40" rows="8" name="review" minlength="25" maxlength="255" required></textarea><br>
+                <span id="review_error" class="hidden">Review Requires at least 25 characters</span><br><br>
+                <label for="review_id_input">Review Code</label><br>
+                <input id="review_id_input" type="text" name="review_id" minlength="12" maxlength="12" required><br>
+                <span id="review_code_error" class="hidden">A valid review code is required. Please check your emails for your review code</span><br><br>            
+                <button type="submit" value="Submit">Submit Review</button>
+            </form>
+        </div>
+    </main>
+    <script src="./scripts/reviews.js"></script>
+</body>
+</html>
