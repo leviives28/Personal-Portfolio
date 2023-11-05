@@ -2,6 +2,8 @@
 
 ## This is the code for my personal online portfolio, and is very likely to be version 1
 
+Website can be viewed at [https://leviives.dev](https://leviives.dev/)
+
 
 ### Purpose
 
