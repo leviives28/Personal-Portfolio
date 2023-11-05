@@ -30,7 +30,7 @@ Custom express back end server which hosts the endpoints for enabling the fronte
 
 
 ### Not included
-I purposely have not included the web server config files, nor the database schema.
+I purposely have not included the web server config files, the database schema, nor required packages.
 
 
 ### Status
