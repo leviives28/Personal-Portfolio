@@ -1,0 +1,466 @@
+body{
+    max-width: 100vh;
+    min-width: 100%;
+    box-sizing: border-box;
+    background-color: #E3E3E3;
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: white;
+    display: inline-flex;
+    max-width: 100%;
+    min-width: 100%;
+    justify-content: space-between;
+    align-content: center;
+    position: fixed;
+    top: 0;
+}
+
+#logoContainer {
+    margin: 2.5% 0px 2.5% 5%;
+}
+
+#logo {
+    max-width: 40px;
+    vertical-align: middle;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 5%;
+}
+
+.navLink {
+    max-width: fit-content;
+    display: inline;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 600;
+    color: rgb(78, 78, 78);
+    margin-right: 5%;
+}
+
+main {
+    margin-top: 25%;
+}
+
+#titles h1, #titles h2 {
+    margin: 0px;
+    color: rgb(78, 78, 78);
+    margin-left: 7.5%;
+}
+
+#introduction p {
+    color: #666;
+    font-size: 15px;
+    margin-left: 7.5%;
+}
+
+#recentProjectsContainer {
+    margin-top: 20%;
+    text-align: center;
+}
+
+.pageLink {
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: black;
+}
+
+.background-downy {
+    background-color: #66CCCC;
+}
+
+#currentProject {
+    margin-top: 10%;
+}
+
+figure img {
+    max-width: 85%;
+}
+
+figcaption {
+    margin: 5% 0px;
+    color: #666;
+}
+
+.link {
+    color: inherit;
+}
+
+#aboutTitle, #contactTitle {
+    text-align: center;
+    color:rgb(78, 78, 78);
+}
+
+#aboutMe {
+    margin: 0% 5% 10% 5%;
+    text-align: center;
+    color: #666;
+}
+
+#mySkills {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+#mySkills h3 {
+    text-align: center;
+    color:rgb(78, 78, 78);
+}
+
+#skillsContainer {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#skillsContainer p {
+    min-width: 30%;
+    background-color: #66CCCC;
+    margin: 2.5% 0;
+    text-align: center;
+    border-radius: 25px;
+    padding: 0 3px;
+}
+
+#qualifications {
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+#qualifications h3 {
+    color:rgb(78, 78, 78);
+}
+
+#qualificationsContainer p {
+    color: #666;
+    margin: 3% 1%;
+}
+
+#note {
+    font-size: 12px;
+    padding-top: 5%;
+}
+
+.contactContainer {
+    margin-bottom: 5%;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    color: #666;
+}
+
+#mailIcon {
+    max-width: 35px;
+    margin: 0 3% 0 5%;
+    background-color: #66CCCC;
+    border-radius: 60px;
+}
+
+.contactIcon {
+    max-width: 35px;
+    margin: 0 3% 0 5%;
+}
+
+#reviewsTitle h1 {
+    text-align: center;
+    color: rgb(78, 78, 78);
+    margin-bottom: 5%;
+}
+
+#projectMainTitle h1 {
+    text-align: center;
+    color: rgb(78, 78, 78);
+    margin-bottom: 5%;
+}
+
+#currentReview {
+    color: rgb(78, 78, 78);
+    margin-top: 15%;
+    text-align: center;
+}
+
+#currentReview a {
+    color: #666;
+}
+
+.hidden {
+    color: red;
+    display: none;
+}
+
+#reviewForm {
+    margin-top: 20%;
+    text-align: center;
+    display: block;
+}
+
+.projectContainer {
+    text-align: center;
+    margin-bottom: 7.5%;
+}
+
+.projectContainer figure {
+    margin: 0%;
+}
+
+.projectContainer h3 {
+    color: rgb(78, 78, 78);
+}
+
+#projectMainTitle {
+    text-align: center;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#nolink {
+    color: #666;
+}
+
+.errors {
+    margin-top: 1%;
+}
+
+#responsePageRedirectMessage {
+    text-align: center;
+}
+
+#contactInfo {
+    margin-top: 10%;
+}
+
+
+@media only screen and (min-width: 400px) {
+    #currentProjectImage {
+        min-width: 90%;
+    }
+
+    main {
+        margin-top: 20%;
+    }
+
+    #recentProjectsContainer {
+        margin-top: 17.5%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    #logo {
+        max-width: 50px;
+    }
+
+    .navLink {
+        font-size: 16px;
+    }
+
+    #reviewForm {
+        margin-top: 17.5%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #currentProjectImage {
+        min-width: 90%;
+    }
+
+    main {
+        margin-top: 15%;
+    }
+
+    #recentProjectsContainer {
+        margin-top: 15%;
+    }
+
+    #currentProjectImage {
+        min-width: 70%;
+    }
+}
+
+@media only screen and (min-width: 750px) {
+    #logo {
+        max-width: 55px;
+    }
+
+    #recentProjectsContainer {
+        margin-top: 12.5%
+    }
+
+    #currentProjectImage {
+        min-width: 65%;
+    }
+
+    .navLink {
+        padding-right: 5%;
+    }
+
+    #currentReview {
+        font-size: 17px;
+    }
+
+    #reviewForm {
+        margin-top: 12%;
+    }
+
+    #reviewsTitle h1 {
+        margin-bottom: 7.5%;
+    }
+
+    .contactContainer {
+        margin-bottom: 2.5%;
+    }
+
+    #projects {
+        margin-top: 5%;
+    }
+
+    .projectContainer h3 {
+        font-size: 24px;
+    }
+
+    .projectContainer figcaption {
+        font-size: 19px;
+    }
+
+    #currentReview {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #recentProjectsContainer {
+        margin-top: 10%
+    }
+
+    #aboutMe {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #reviewsTitle h1 {
+        margin-bottom: 6%;
+    }
+
+    #reviewForm {
+        margin-top: 10%;
+    }
+
+    #currentReview {
+        font-size: 19px;
+    }
+
+    .contactContainer {
+        margin-bottom: 1.75%;
+    }
+
+    #contactInfo {
+        margin-top: 2.5%;
+        margin-left: 2.5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    header {
+        max-height: 10%;
+    }
+
+    #logoContainer {
+        margin: 1%;
+    }
+
+    #recentProjectsContainer {
+        margin-top: 9%
+    }
+
+    #currentProjectImage {
+        min-width: 50%;
+    }
+
+    main {
+        margin-top: 10%;
+    }
+
+    #currentProject {
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #currentProjectImage {
+        min-width: 30%;
+    }
+
+    #titles h1, #titles h2 {
+        margin: 0px;
+        color: rgb(78, 78, 78);
+        margin-left: 9.5%;
+    }
+
+    #titles h1 {
+        font-size: 38px;
+    }
+
+    #titles h2 {
+        font-size: 30px;
+    }
+
+    #aboutTitle h1 {
+        font-size: 38px;
+    }
+
+    #aboutMe, #mySkills {
+        margin-bottom: 7.5%;
+    }
+
+    #aboutMe p {
+        font-size: 17px;
+    }
+
+    #introduction p {
+        font-size: 17px;
+        margin-left: 9.5%;
+        margin-top: 2.5%;
+    }
+
+    #currentProjectDescription {
+        font-size: 17px;
+    }
+
+    #currentProjectDescription {
+        margin-top: 2.5%;
+    }
+
+    #skillsContainer p {
+        font-size: 17px;
+        padding: 1%;
+    }
+
+    #mySkills h3, #qualifications h3 {
+        font-size: 28px;
+    }
+
+    #qualificationsContainer {
+        font-size: 17px;
+    }
+
+    #qualificationsContainer p {
+        margin: 2%;
+    }
+
+    #note {
+        font-size: 15px;
+        padding-top: 0%;
+    }
+}
