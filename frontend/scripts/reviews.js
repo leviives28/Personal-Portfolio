@@ -8,6 +8,11 @@ if (params.has('review_id')) {
 async function get_reviews() {
     const response = await fetch('https://leviives.dev/reviews/get_reviews');
     reviews = await response.json();
+    for (let rev in reviews) {
+        if (!reviews[rev].review) {
+            reviews.splice(rev, 1);
+        }
+    }
 }
 
 const escapeHTML = str =>
@@ -25,6 +30,7 @@ const escapeHTML = str =>
 
 get_reviews()
 .then(() => {
+    console.log(reviews);
     let iterator = 1;
     document.getElementById('currentReviewMessage').innerHTML = escapeHTML(reviews[0].review);
     document.getElementById('projectLink').innerHTML = !reviews[0].website ? `<p id="nolink">Closed source project</p>` : `<a href=${reviews[0].website} target="_blank" class="link">${reviews[0].website}</a>`;
