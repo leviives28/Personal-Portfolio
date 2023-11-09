@@ -99,7 +99,7 @@ figcaption {
 }
 
 #aboutMe {
-    margin: 0% 5% 10% 5%;
+    margin: 10% 5% 10% 5%;
     text-align: center;
     color: #666;
 }
@@ -269,6 +269,10 @@ figcaption {
     #reviewForm {
         margin-top: 17.5%;
     }
+
+    #aboutMe {
+        margin-top: 7.5%;
+    }
 }
 
 @media only screen and (min-width: 600px) {
@@ -353,6 +357,11 @@ figcaption {
         margin: 0 auto;
     }
 
+    #mySkills {
+        margin-top: 7.5%;
+        margin-bottom: 7.5%;
+    }
+
     #reviewsTitle h1 {
         margin-bottom: 6%;
     }
@@ -372,6 +381,10 @@ figcaption {
     #contactInfo {
         margin-top: 2.5%;
         margin-left: 2.5%;
+    }
+
+    #note {
+        padding-top: 0px;
     }
 }
 
@@ -468,3 +481,5 @@ figcaption {
         padding-top: 0%;
     }
 }
+
+
