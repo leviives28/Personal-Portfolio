@@ -30,6 +30,7 @@ const escapeHTML = str =>
 
 get_reviews()
 .then(() => {
+    reviews.reverse();
     let iterator = 1;
     document.getElementById('currentReviewMessage').innerHTML = escapeHTML(reviews[0].review);
     document.getElementById('projectLink').innerHTML = !reviews[0].website ? `<p id="nolink">Closed source project</p>` : `<a href=${reviews[0].website} target="_blank" class="link">${reviews[0].website}</a>`;
