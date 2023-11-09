@@ -55,7 +55,7 @@ main {
 }
 
 #introduction p {
-    color: #666;
+    color: black;
     font-size: 15px;
     margin-left: 7.5%;
 }
@@ -86,7 +86,7 @@ figure img {
 
 figcaption {
     margin: 5% 0px;
-    color: #666;
+    color: black;
 }
 
 .link {
@@ -101,7 +101,7 @@ figcaption {
 #aboutMe {
     margin: 10% 5% 10% 5%;
     text-align: center;
-    color: #666;
+    color: black;
 }
 
 #mySkills {
@@ -139,7 +139,7 @@ figcaption {
 }
 
 #qualificationsContainer p {
-    color: #666;
+    color: black;
     margin: 3% 1%;
 }
 
@@ -155,7 +155,7 @@ figcaption {
 .contactLink {
     display: flex;
     align-items: center;
-    color: #666;
+    color: black;
 }
 
 #mailIcon {
@@ -189,7 +189,7 @@ figcaption {
 }
 
 #currentReview a {
-    color: #666;
+    color: black;
 }
 
 .hidden {
@@ -240,6 +240,10 @@ figcaption {
 
 #contactInfo {
     margin-top: 10%;
+}
+
+#currentReviewMessage {
+    color: black;
 }
 
 
@@ -481,5 +485,3 @@ figcaption {
         padding-top: 0%;
     }
 }
-
-
