@@ -10,8 +10,8 @@ const recentProjects = [
     {
         img: './images/project2.png',
         url: './project2.html',
-        description: 'A <a href="https://github.com/leviives28/Covalent-Fragment-Grouping" target="_blank" class="link">python program</a> used for grouping data dependent on user defined constraints. Makes use of the pulp library.<br> Created for a friend who works in the science industry.',
-        alt: 'image of python program'
+        description: 'A <a href="https://civfrcards.me" target="_blank" class="link">React web app</a> used for betting of virtual currency on CivFR community games. I was responsible for front-end, back-end development and database management.',
+        alt: 'image of civfr betting webapp'
     }
 ];
 
