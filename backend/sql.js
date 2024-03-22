@@ -1,10 +1,10 @@
 const mysql = require('mysql2'); // Require in the mysql library to communicate with mysql databases.
 
 const database = mysql.createPool({  // Save a variable named db, equal to creating a mysql pool, passing in log in details as key value pairs.
-    host: 'host address',
-    user: 'username',
-    password: 'password',
-    database: 'database name',
+    host: '',
+    user: '',
+    password: '',
+    database: '',
     connectionLimit: 20,
     waitForConnections: true,
 })
@@ -77,7 +77,7 @@ async function get_reviews() {
                 connection.release();
                 return;
             }
-            connection.query('SELECT * FROM reviews', (err, results) => {
+            connection.query('SELECT * FROM reviews WHERE review IS NOT NULL', (err, results) => {
                 if (err) {
                     console.error('SQL Query Error\nget_reviews function\nReason\n' + err);
                     resolve(false);
@@ -90,7 +90,6 @@ async function get_reviews() {
         })
     })
 }
-
 module.exports = {
     check_code_validity,
     add_review,
